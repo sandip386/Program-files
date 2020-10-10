@@ -1,0 +1,403 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+    body{
+        overflow: 
+    }
+    .main{
+        max-width:100vw;
+        height:100vh;
+    }
+    .all{
+        max-width: 100%;
+        height:100vh;
+    }
+    .one{
+        max-width: 100%;
+        height:100%;
+        background-color: burlywood;
+        position:relative;
+    }
+    .title{/*contain t1*/
+    width: 100%;
+    position: absolute;
+    animation:start 2s ease forwards;
+    }
+    @keyframes start{
+        0%{
+        opacity:0;
+        }
+        50%{
+           opacity:0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+    .t1{/*Hangman*/
+    text-align: center;
+    font-family: cursive;
+    color:teal;
+    font-size: 13vmin;
+    }
+    
+    .pic{
+    max-width: 100vmin;
+    max-height: 100vmin;
+    position: absolute;
+    left:33%;
+    right:33%;
+    border:2px solid black;
+    animation:start1 ease 2s forwards
+    }
+    @keyframes start1{
+    0%{
+        top:-100%;
+    }
+    50%{
+        top:-100%;
+    }
+    100%{
+        top:20%;
+    }
+    }
+    .photo{
+        max-width: 100%;
+        max-height:100%;
+        border-radius: 50%;
+        
+    }
+    .end{
+    position: absolute;
+    left:30vw;
+    animation:start2 ease 3s forwards; 
+    }
+    @keyframes start2{
+        0%{
+    bottom:-100%;
+        }
+    50%{
+    bottom:-100%;
+    }
+    100%{
+    bottom:20%;
+    opacity:1;
+    }
+    }
+    .t2{
+        margin-left: 10vw;
+    }
+    .press{
+    border: none;
+    background-color: tomato;
+    margin-left: 10vw;
+    font-size: 5vmin;
+    animation:start 1s ease infinite;
+    }
+   
+    /*-------------------------------instruction part from here-----------------------------*/
+
+
+    .two{
+        max-width: 100%;
+        height:100%;
+        background-color: purple;
+        position: relative;
+    }
+    .int{
+     width: 100%;
+     position: absolute;
+    }
+.t3{
+    padding-left: 15%;
+    color:paleturquoise;
+    font-size: 2.9rem;
+    animation:start5 1s ease forwards 3s;
+    opacity: 0;
+}
+@keyframes start5 {
+    0%{
+     opacity:0;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+    
+}
+.rule{
+    width: 100%;
+border: 2px solid black;
+position: absolute;
+top:20%;
+opacity: 0;
+animation:start6 ease 1s forwards 4s;
+}
+@keyframes start6{
+    0%{
+     opacity:0;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+    
+}
+.list li{
+   word-wrap: break-word;
+padding-top: 20px;
+padding-right: 10px;
+padding-left: auto;
+font-size: 1.2rem;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: palevioletred;
+}
+.enjoy{
+    width: 100%;
+    position: absolute;
+    top:45%;
+}
+.t4{
+color:gold;
+animation: start7 6s ease-out infinite 5s;
+opacity: 0;
+}
+@keyframes start7{
+0%{
+  transform:translateX(-100%);
+opacity: 1;
+}
+25%{
+  transform:translateX(-100%);
+}
+50%{
+
+    transform:translateX(20%);
+}
+100%{
+
+    transform:translateX(200%);
+}
+}
+.end2{
+    width: 100%;
+    position: absolute;
+    top:70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    animation:start2 2s ease-in-out forwards 6s; 
+}
+.press2{
+font-size: 1.7rem;
+border: none;
+border-radius: 5px;
+background-color: gold;
+font-family: monospace;
+
+}
+
+    /*---------------------------------------------------------------------------------------*/
+
+    /*-------------------------------Game part-----------------------------------------------*/
+    .three{
+        max-width: 100%;
+        height:100%;
+        background-color: orange;  
+    }
+    .level{
+        width: 100%;
+     text-align: center;
+    }
+    .life{
+     width: 100%;
+     color: red;
+    }
+    .head{
+        margin-top: 20px;
+        width: 100%;  
+        background-color: orange;
+        height:20%;
+    }
+    .key{
+     animation:start8 2s ease forwards;
+    }
+@keyframes start8 {
+    0%{
+transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+     }
+    100%{
+        transform: translateX(0%);
+     }
+}
+  
+    .t7{
+        padding-top: 40px;
+        padding-left: 50px;
+        transition: 2s;
+    }
+    .answer{
+        width: 100%;
+        margin-top: 10px;   
+    }
+    .give{
+        margin-left: 37px;
+        padding-left: 4px;
+        padding-top: 20px;
+        font-size: 1.5rem;
+    }
+    .final{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 36%;
+    }
+    .ok{
+        width:20%;
+        height: 40px;
+    }
+
+/*------------------------------------------------body part---------------------------------*/
+
+.body{
+width: 100%;
+height:300px;
+position: relative;
+margin-top: 16px;
+border: 2px slid red;
+}
+.body0{
+width:13%;
+height:15%;
+position: absolute;
+  left:39.8%;
+  top:3%;
+  opacity:0;
+}
+.body1{
+    width:13%;
+    height:15%;
+    position: absolute;
+  left:40%;
+  top:15%;
+  opacity: 0;
+}
+.body2{
+    position: absolute;
+    top:30%;
+  left:46%;
+  opacity:0 ;
+}
+.body3{
+    position: absolute;
+    top:32%;
+  left:33%;
+  opacity:0;
+}
+.body4{
+position: absolute;
+top:32%;
+left:48%;
+opacity:0;
+}
+.body5{
+    position: absolute;
+    top:65%;
+    left:37%;
+    opacity: 0;
+}
+.body6{
+    width:17%;
+height:200px;
+position: absolute;
+top:12%;
+left:39%;
+opacity:0;
+
+}
+.body7{
+    width:17%;
+    height:200px;
+    position: absolute;
+    top:25%;
+    left:39%;
+    opacity:0;
+}
+.dead{
+    padding-top: 80%;
+    margin-left: 37%;
+    opacity:0;
+}
+.dead2{
+    padding-top: 6%;
+    padding-left: 19%;
+    opacity:0;
+   
+}
+@keyframes bye{
+0%{
+top:13%;
+}
+50%{
+    top:13%;
+}
+100%{
+top:25%;
+}
+}
+/*.body1{
+    width:15%;
+    height:60px;
+   border: 2px solid black;
+   border-radius: 100%;
+   margin-left: 140px;
+   margin-top: 50px;
+   opacity:0;
+}
+.eye1{
+width:10%;
+height:10px;
+border: 2px solid black;
+border-radius: 90%;
+margin-top: 20px;
+margin-left: 10px;
+}
+.eye2{
+width:10%;
+height:10px;
+border: 2px solid black;
+border-radius: 90%;
+margin-top:-10px;
+margin-left: 35px;
+}
+.smile{
+width:10%;
+height:10px;
+border: 2px solid black;
+border-radius: 120px;
+margin-left: 23px;
+margin-top: 8px;
+}
+.body2{
+width:15%;
+height:100px;
+margin-left: 165px;
+}
+.line1{
+border:2px solid black;
+width:3%;
+height:100%;
+opacity:0;
+}*/
